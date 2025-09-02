@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 10</title>
+</head>
+
+<body>
+    <h1>Video</h1>
+
+    <video src="/media/videos/video.mp4" width="700" autoplay loop controls preload="none"
+        poster="/media/images/thumbnail.jfif"></video>
+    <!-- preload="none", "auto", "metadata" -->
+
+    <hr>
+
+    <video width="700" controls autoplay poster="/media/images/thumbnail.jfif">
+        <source src="/media/videos/video.mp4" type="video/mp4" />
+
+        <source src="/media/videos/video.webm" type="video/webm" />
+    </video>
+
+    <hr />
+
+    <audio src="/media/audios" controls autoplay loop preload="none">
+    </audio>
+
+    <hr />
+
+    <audio controls autoplay loop preload="none">
+        <source src="/media/audios" type="audio/mp3"  />
+
+        <source src="/media/audios" type="audio/mp3"  />
+    </audio>
+
+
+</body>
+
+</html>
