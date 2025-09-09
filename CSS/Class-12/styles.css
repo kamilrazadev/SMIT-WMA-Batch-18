@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Verdana, sans-serif;
+  background-color: red;
+}
+
+h1,
+p {
+  color: blue;
+}
+
+.main-heading {
+  color: orange;
+  font-size: 50px;
+}
+
+.imp {
+  color: green;
+}
+
+p {
+  margin: 10px;
+  padding: 10px;
+  /* border: 1px solid red; */
+  /* border-width: 1px;
+  border-style: solid;
+  border-color: blue; */
+}
+
+#button {
+  padding: 10px;
+  margin: 10px;
+  border: 5px solid purple;
+  background-color: black;
+  color: purple;
+}
+
+.content-box {
+  padding: 50px;
+  border: 2px dashed purple;
+  padding: 100px;
+  background-color: #00000078;
+}
+
+/* .content-box > p, .content-box > div > p {
+    color: aqua;
+} */
+
+.content-box p {
+  color: aqua;
+  padding: inherit;
+  border: inherit;
+}
+
+#sub-heading-2 {
+  color: blue;
+  font-size: 40px;
+}
+
+/* Adjacent sibling */
+#sub-heading-2 + p {
+  font-size: 24px;
+}
+
+#sub-heading-2 ~ p {
+  margin: 0;
+  padding: 0;
+}
