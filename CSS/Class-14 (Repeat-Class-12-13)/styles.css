@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: red; */
+}
+
+#main-heading {
+  font-size: 56px;
+  line-height: 38px;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+  color: blue;
+  background-color: red;
+}
+
+/* h2 {
+  color: blue;
+}
+
+h3 {
+  color: blue;
+} */
+
+.imp {
+  color: red;
+  font-weight: 900;
+  font-style: italic;
+  /* font-style: oblique; */
+  /* text-decoration: underline; */
+  text-align: right;
+}
+
+#note {
+  /* color: #ED68ED; HEX Code */
+  /* color: rgb(237, 104, 237); RGB Code */
+  color: hsl(300 79 67);
+}
+
+.container {
+  margin: 30px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* opacity: 0.5; */
+  font-family: "Courier New", Courier, monospace;
+}
+
+.c-text {
+  /* color: white; */
+  text-transform: lowercase;
+  line-height: 40px;
+  letter-spacing: 10px;
+  word-spacing: 50px;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+  /* text-decoration: line-through; */
+}
+
+a:visited {
+  color: brown;
+}
+
+.name {
+  text-decoration: overline;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.my-text {
+  padding: 10px;
+  text-align: justify;
+  text-indent: 40px;
+}
+
+.my-text::first-letter {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.my-text::first-line {
+  color: red;
+}
+
+.my-sub-heading {
+  text-shadow: 10px -10px 3px #000000;
+}
+
+.my-btn {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.my-btn:hover {
+    background-color: white;
+    color: black;
+    scale: 1.1;
+}
+
+.my-btn:active {
+    scale: 0.9;
+}
+
+.my-input {
+    padding: 10px;
+}
+
+.my-input:focus {
+    background-color: black;
+    color: white;
+}

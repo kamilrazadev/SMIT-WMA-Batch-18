@@ -1,0 +1,81 @@
+/* p[class] {
+    color: red;
+} */
+
+/* .imp[id] {
+    color: blue;
+} */
+
+/* p[id="abc"] {
+    color: orangered;
+} */
+
+/* p[class="imp"] {
+    color: red;
+} */
+
+p[class~="imp"] {
+  color: red;
+}
+/* 
+p[class^="ab"] {
+    color: blue
+} */
+/* 
+p[class*="p"] {
+    color: blueviolet;
+}
+
+p[class$="f"] {
+    color: chocolate;
+} */
+
+div.box {
+  background-color: cadetblue;
+  width: 500px;
+  max-width: 100%;
+  /* min-width: 700px; */
+  /* width: 50%; */
+  height: 200px;
+  /* max-height: 1000px; */
+  min-height: fit-content;
+}
+
+.scrolling-box {
+  height: 300px;
+  background-color: blanchedalmond;
+  /* overflow: hidden; */
+  /* overflow: scroll; */
+  overflow: auto;
+}
+
+.model {
+  /* border-width: 2px;
+    border-style: solid;
+    border-color: red; */
+
+  border: 2px solid blue;
+  text-align: justify;
+  padding: 20px;
+  /* margin: 100px; */
+}
+
+.model > p {
+    margin: 0;
+}
+
+.box2 {
+    border: 2px solid olive;
+    /* margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px; */
+
+    /* margin: 10px 20px;
+    padding: 20px 5px; */
+
+    margin: 10px 30px 50px 0px;
+}
+
+.box2 + div {
+    border: 2px solid gray;    
+}
