@@ -1,0 +1,80 @@
+/* .relative-para {
+  position: relative;
+  left: 100px;
+  top: 20px;
+} */
+
+.absolute-para {
+  background-color: red;
+  width: 300px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.container {
+  /* margin: 50px; */
+
+  margin-top: 100px;
+  z-index: 100;
+  padding: 10px;
+  height: 400px;
+  background-color: #b8b8b8;
+  position: relative;
+}
+
+.container > img {
+  width: 200px;
+  border-radius: 30px;
+  position: absolute;
+}
+
+.container > img:first-child {
+  bottom: 80px;
+  left: 70px;
+}
+
+.container > img:nth-child(2) {
+  top: 80px;
+  right: 70px;
+}
+
+.chat-bubble {
+  width: 30px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.container-2 {
+  height: 200px;
+  background-color: #e2e2e2;
+  overflow: auto;
+  position: relative;
+}
+
+.container-2 > h3 {
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+
+.container-2 > p:nth-child(2) {
+  padding-top: 50px;
+}
+
+.container-3 > blockquote {
+    float: right;
+    width: 200px;
+    border-radius: 30px;
+    border: 2px dotted gray;
+    padding: 30px;
+}
+
+.container-4 > p {
+    width: 150px;
+    background-color: gray;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+}
