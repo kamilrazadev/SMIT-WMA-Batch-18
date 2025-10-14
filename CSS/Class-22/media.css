@@ -1,0 +1,26 @@
+@media only screen and (max-width:425px) {
+  .container {
+    flex-direction: column;
+  }
+  .leftBox, .rightBox {
+    /* width: 100%; */
+    width: 200px;
+  }
+}
+
+/* min-width:425px  */
+@media print {
+  /* CSS rules for print media */
+  body {
+    background-color: black;
+    color: white;
+  }
+}
+@media only screen and (orientation: portrait) {
+.leftBox {
+  width: 100%;
+}
+.rightBox  {
+  display: none;
+}
+}
