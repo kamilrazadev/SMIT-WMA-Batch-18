@@ -182,9 +182,9 @@
 // console.log("Result 1:", result1); // Expected: 30 (10 + 20)
 // console.log("Value of a after result1:", a); // Expected: 11
 
-var a = 4;
-var b = 6;
+var a = 2;
+var b = 3;
 //4     +   12       +   9 = 25
 var aPlusBWholeSquare = a * a + 2 * (a) * (b) + b * b;
 
-console.log(aPlusBWholeSquare);
+console.log("10"+aPlusBWholeSquare);
