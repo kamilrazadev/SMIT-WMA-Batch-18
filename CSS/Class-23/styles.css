@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+    font-family: "Geomanist";
+    src: url("/fonts/Geomanist-Regular.otf") format("opentype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.font-playwrite {
+  font-family: "Playwrite DE SAS", cursive;
+}
+
+.font-geomanist {
+    font-family: "Geomanist";
+}
