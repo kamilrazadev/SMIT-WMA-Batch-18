@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Class - 36 & 37</title>
+</head>
+
+<body>
+    <div>
+        Email:
+        <input type="email" id="email">
+        <button onclick="checkAddress('email');">Submit</button>
+    </div>
+
+    <p style="color: red;" id="error"></p>
+
+    <button onclick="showHeading()" id="show">Show</button>
+    <button onclick="hideHeading()" id="hide" class="hide">Hide</button>
+
+    <h1 id="heading" class="hide">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, veniam?
+    </h1>
+
+    <div>
+        <input type="text" id="password">
+
+        <br>
+
+        <button onclick="autoSuggestPassword()">Auto Suggest</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
