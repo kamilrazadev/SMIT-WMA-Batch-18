@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.prod-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px;
+}
+
+.prod-card {
+  border: 1px solid gray;
+  border-radius: 12px;
+  width: 200px;
+  padding: 10px;
+}
+
+.prod-card .bg-image {
+  width: 100%;
+  height: 120px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  background-image: url("https://www.01net.com/app/uploads/2025/09/Apple-iPhone-17-Pro-2.jpg");
+  background-size: cover;
+}
+
+.prod-card .desc {
+  color: #333;
+}
+
+.prod-card .likes-reviews-container {
+  display: flex;
+  justify-content: space-between;
+}
