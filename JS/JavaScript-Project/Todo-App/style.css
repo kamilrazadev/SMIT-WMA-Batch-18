@@ -75,3 +75,31 @@ body {
 i {
     cursor: pointer;
 }
+
+.btn {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 30px;
+  
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#addBtn {
+   padding: 15px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
