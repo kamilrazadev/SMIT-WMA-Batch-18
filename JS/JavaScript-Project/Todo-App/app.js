@@ -8,6 +8,7 @@ let todoList = document.getElementsByTagName("ul")[0];
 let deleteBtn = document.querySelector(".btn");
 // let todoText = "";
 let editItem = null;
+
 // let deleteBtn = document.querySelector(".fa-trash")
 
 // console.log(todoList)
@@ -22,30 +23,22 @@ function errorsAlert(icon, title, message) {
   });
 }
 
-function editHandler(event) {
-  editItem = event.parentElement.parentElement.parentElement;
+function editHandler (e){
+  // console.log("mai chlaa ==>", )
+  editItem = e.parentElement.parentElement.parentElement
   // console.log(editItem)
-
-  todoText = editItem.innerText;
-
-  inputText.value = todoText;
+  inputText.value = editItem.textContent.trim()
 }
+
 function addHandler() {
-  if (editItem !== null) {
 
-    editItem.textContent = inputText.value
-    console.log(editItem)
+  
+  if(editItem){  
+    editItem.firstChild.textContent = inputText.value
     editItem = null
-    inputText.value = ""
-    // editItem.innerText = todoText
-
+    // console.log(editItem)
+    return
   }
-  // let condition = editItem == null;
-  // if (condition) {
-  //   console.log("element mil gaya");
-  // } else {
-  //   editItem.innerText = todoText;
-  // }
 
   if (inputText.value.trim() == "") {
     errorsAlert("error", "kuchbi", "Please Enter a Value");
