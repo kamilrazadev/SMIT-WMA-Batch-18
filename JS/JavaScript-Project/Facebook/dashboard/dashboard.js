@@ -98,4 +98,96 @@ const createStoryHTML = () => {
   }
 };
 
-createStoryHTML();
+const createStoryHTMLThroughMap = () => {
+  const returnedArr = stories.map((story, index) => {
+    return ` <div class="story"
+                            style="background-image: url(${story.storyFile});">
+                            <div class="profile-pic">
+                                <img src="${story.profilePic}"
+                                    alt="">
+                            </div>
+                            <div class="story-content">
+                                <p>${index + 1}: ${story.fullName}</p>
+                            </div>
+                        </div>`;
+  });
+
+  storyContainer.innerHTML = returnedArr.join("");
+};
+
+// createStoryHTML();
+
+createStoryHTMLThroughMap();
+
+// Call back and higher orders
+
+// function greet(name, callback) {
+//   console.log(`Hello, ${name}!`);
+//   // The callback is executed right after the log
+//   callback();
+// }
+
+// function sayGoodbye() {
+//   console.log("Goodbye!");
+// }
+
+// function sayWelcome() {
+//   console.log("Welcome!");
+// }
+
+// // Pass 'sayGoodbye' as a callback function (without parentheses)
+// greet("Alice", sayGoodbye);
+
+// greet("John", sayWelcome);
+
+// const newArr = ["M.", "Kamil", "Raza"];
+
+// console.log(newArr.join(" "));
+
+const students = [
+  {
+    name: "",
+    id: "",
+    semesters: {
+      1: {
+        maths: 80,
+        chem: 70,
+        programming: 83,
+      },
+      2: {
+        maths: 70,
+        phy: 67,
+        javascript: 83,
+      },
+    },
+  },
+];
+
+const studentsCalculated = [
+  {
+    name: "",
+    id: "",
+    semesters: {
+      1: {
+        maths: 80,
+        chem: 70,
+        programming: 83,
+      },
+      2: {
+        maths: 70,
+        phy: 67,
+        javascript: 83,
+      },
+    },
+    semester1: "",
+    obtainedMarks: "",
+    percentage: "",
+    grade: "",
+  },
+];
+
+// How to calculate percentage:
+
+// Obtained Marks = total marks of each subjects in semesters
+// Percentage = semester1 (85%), semester2 (73%), semester3 (65%) ==>
+// finalPercentage = sumOfEachSemesterPercentage / numberOfSemesters ==> (85 + 73 + 65) / 3
