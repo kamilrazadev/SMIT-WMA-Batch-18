@@ -1,7 +1,7 @@
 @import url("../global.css");
 
 .container {
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   background-color: #f2f4f7;
@@ -296,4 +296,78 @@
   font-size: 14px;
   background: linear-gradient(to top, #000, #00000000);
   width: 100%;
+}
+
+.post{
+  /* background-color: red; */
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.profile-content{
+display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-pic img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.post-caption{
+  margin-bottom: 10px;
+}
+
+.post-icons i {
+  cursor: pointer;
+}
+
+.post-image, .post-reactions {
+margin-bottom: 10px;
+}
+
+.post-image img{
+height: 500px;
+width:100%;
+min-width: 500px;
+object-fit: cover;
+}
+.post-reactions {
+  display: flex;
+  justify-content: space-between;
+  
+} 
+.post-reactions  div {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0px;
+}
+ .post-footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.post-reactions > div i, .post-footer > div  {
+  cursor: pointer;
+}
+
+.post-user-detail #name {
+  font-weight: bold;
+}
+
+.post {
+  margin-bottom: 20px;
 }

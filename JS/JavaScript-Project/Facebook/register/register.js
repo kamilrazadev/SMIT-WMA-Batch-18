@@ -111,10 +111,12 @@ const signupHandler = () => {
   }
 
   // get previous users from local storage
-  let usersFromDB = JSON.parse(localStorage.getItem("users"));
+  let usersFromDB = JSON.parse(localStorage.getItem("users")) || [];
 
   // setting/register new user and save in the local storage
+  // console.log(usersFromDB)
   usersFromDB.push(userObj);
+  // console.log(usersFromDB)
   localStorage.setItem("users", JSON.stringify(usersFromDB));
 
   sweety("success", "Signup Done", "Congratulations! signup successfully!");
