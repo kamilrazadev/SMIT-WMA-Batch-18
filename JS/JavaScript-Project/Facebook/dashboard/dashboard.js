@@ -1,7 +1,5 @@
-let postContainer  = document.querySelector("#post-container")
-console.log(postContainer)
-
-
+let postContainer = document.querySelector("#post-container");
+console.log(postContainer);
 
 const stories = [
   {
@@ -81,120 +79,6 @@ const stories = [
   },
 ];
 
-const posts = [
-  {
-    profilePic : "https://i.pravatar.cc/150?img=1",
-    name : "Emma Johnson",
-    date : "29 Jan, 2026 9:06 ",
-    caption : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit unde ad mollitia neque quod nemo quisquam, blanditiis nulla facilis dignissimos error ipsam atque amet nobis ullam illum dicta in. Culpa?",
-    imageUrl : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP8yGuDDBINqOdIbbrUVrBZvNwCTQMp_0ZCg&s",
-    reactions : 32,
-    comments : 3,
-    shares : 2,
-
-  },
-  {
-    profilePic : "https://i.pravatar.cc/150?img=1",
-    name : "Emma Johnson",
-    date : "29 Jan, 2026 9:06 ",
-    caption : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit unde ad mollitia neque quod nemo quisquam, blanditiis nulla facilis dignissimos error ipsam atque amet nobis ullam illum dicta in. Culpa?",
-    imageUrl : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP8yGuDDBINqOdIbbrUVrBZvNwCTQMp_0ZCg&s",
-    reactions : 32,
-    comments : 3,
-    shares : 2,
-
-  },
-  {
-    profilePic : "https://i.pravatar.cc/150?img=1",
-    name : "Emma Johnson",
-    date : "29 Jan, 2026 9:06 ",
-    caption : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit unde ad mollitia neque quod nemo quisquam, blanditiis nulla facilis dignissimos error ipsam atque amet nobis ullam illum dicta in. Culpa?",
-    imageUrl : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP8yGuDDBINqOdIbbrUVrBZvNwCTQMp_0ZCg&s",
-    reactions : 32,
-    comments : 3,
-    shares : 2,
-
-  },
-  {
-    profilePic : "https://i.pravatar.cc/150?img=1",
-    name : "Emma Johnson",
-    date : "29 Jan, 2026 9:06 ",
-    caption : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit unde ad mollitia neque quod nemo quisquam, blanditiis nulla facilis dignissimos error ipsam atque amet nobis ullam illum dicta in. Culpa?",
-    imageUrl : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP8yGuDDBINqOdIbbrUVrBZvNwCTQMp_0ZCg&s",
-    reactions : 32,
-    comments : 3,
-    shares : 2,
-
-  },
-  {
-    profilePic : "https://i.pravatar.cc/150?img=1",
-    name : "Emma Johnson",
-    date : "29 Jan, 2026 9:06 ",
-    caption : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit unde ad mollitia neque quod nemo quisquam, blanditiis nulla facilis dignissimos error ipsam atque amet nobis ullam illum dicta in. Culpa?",
-    imageUrl : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP8yGuDDBINqOdIbbrUVrBZvNwCTQMp_0ZCg&s",
-    reactions : 32,
-    comments : 3,
-    shares : 2,
-
-  },
-  {
-    profilePic : "https://i.pravatar.cc/150?img=1",
-    name : "Emma Johnson",
-    date : "29 Jan, 2026 9:06 ",
-    caption : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit unde ad mollitia neque quod nemo quisquam, blanditiis nulla facilis dignissimos error ipsam atque amet nobis ullam illum dicta in. Culpa?",
-    imageUrl : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP8yGuDDBINqOdIbbrUVrBZvNwCTQMp_0ZCg&s",
-    reactions : 32,
-    comments : 3,
-    shares : 2,
-
-  },
-  {
-    profilePic : "https://i.pravatar.cc/150?img=1",
-    name : "Emma Johnson",
-    date : "29 Jan, 2026 9:06 ",
-    caption : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit unde ad mollitia neque quod nemo quisquam, blanditiis nulla facilis dignissimos error ipsam atque amet nobis ullam illum dicta in. Culpa?",
-    imageUrl : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP8yGuDDBINqOdIbbrUVrBZvNwCTQMp_0ZCg&s",
-    reactions : 32,
-    comments : 3,
-    shares : 2,
-
-  },
-  {
-    profilePic : "https://i.pravatar.cc/150?img=1",
-    name : "Emma Johnson",
-    date : "29 Jan, 2026 9:06 ",
-    caption : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit unde ad mollitia neque quod nemo quisquam, blanditiis nulla facilis dignissimos error ipsam atque amet nobis ullam illum dicta in. Culpa?",
-    imageUrl : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP8yGuDDBINqOdIbbrUVrBZvNwCTQMp_0ZCg&s",
-    reactions : 32,
-    comments : 3,
-    shares : 2,
-
-  },
-  {
-    profilePic : "https://i.pravatar.cc/150?img=1",
-    name : "Emma Johnson",
-    date : "29 Jan, 2026 9:06 ",
-    caption : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit unde ad mollitia neque quod nemo quisquam, blanditiis nulla facilis dignissimos error ipsam atque amet nobis ullam illum dicta in. Culpa?",
-    imageUrl : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP8yGuDDBINqOdIbbrUVrBZvNwCTQMp_0ZCg&s",
-    reactions : 32,
-    comments : 3,
-    shares : 2,
-
-  },
-  {
-    profilePic : "https://i.pravatar.cc/150?img=1",
-    name : "Muhammad Hasan",
-    date : "28 Feb, 2025 9:06 ",
-    caption : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit unde ad mollitia neque quod nemo quisquam, blanditiis nulla facilis dignissimos error ipsam atque amet nobis ullam illum dicta in. Culpa?",
-    imageUrl : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP8yGuDDBINqOdIbbrUVrBZvNwCTQMp_0ZCg&s",
-    reactions : 16,
-    comments : 32,
-    shares : 52,
-
-  },
-]
-
-
 const storyContainer = document.getElementById("story-container");
 
 const createStoryHTML = () => {
@@ -237,7 +121,6 @@ const createStoryHTMLThroughMap = () => {
 // createStoryHTML();
 
 createStoryHTMLThroughMap();
-
 
 const postHTML = (post) => {
   // console.log("post data ==>",post)
@@ -285,10 +168,10 @@ const postHTML = (post) => {
                                     <i class="fa-regular fa-share-from-square"></i> Share
                                 </div>
                             </div>
-                        </div>`
-}
+                        </div>`;
+};
 
-// one liner  ==> 
+// one liner  ==>
 
 // const createPostHTMLThroughMap = () => {
 // let postHTMLForContainer = posts.map((post) => postHTML(post))
@@ -296,8 +179,7 @@ const postHTML = (post) => {
 // postContainer.innerHTML = postHTMLForContainer.join("")
 // }
 
-
-// Using Return 
+// Using Return
 // const createPostHTMLThroughMap = () => {
 // let postHTMLForContainer = posts.map((post) =>  {
 // return postHTML(post)
@@ -306,7 +188,6 @@ const postHTML = (post) => {
 // postContainer.innerHTML = postHTMLForContainer.join("")
 // }
 
-
 // const createPostHTMLThroughMap = () => {
 // let postHTMLForContainer = posts.map((post) =>  {
 // return postHTML(post)
@@ -315,11 +196,11 @@ const postHTML = (post) => {
 // postContainer.innerHTML = postHTMLForContainer.join("")
 // }
 
-
-// without postHTML function ==> 
+// without postHTML function ==>
 const createPostHTMLThroughMap = () => {
-let postHTMLForContainer = posts.map((post) =>  {
-return `<div class="post">
+  const postsFromLS = JSON.parse(localStorage.getItem("posts"));
+  let postHTMLForContainer = postsFromLS?.map((post) => {
+    return `<div class="post">
                             <div class="post-header">
                                 <div class="profile-content">
                                     <div class="profile-pic">
@@ -363,17 +244,15 @@ return `<div class="post">
                                     <i class="fa-regular fa-share-from-square"></i> Share
                                 </div>
                             </div>
-                        </div>`
-} )
+                        </div>`;
+  });
 
-postContainer.innerHTML = postHTMLForContainer.join("")
-}
+  postContainer.innerHTML = postHTMLForContainer
+    ? postHTMLForContainer.join("")
+    : "";
+};
 
-
-
- 
-
-createPostHTMLThroughMap()
+createPostHTMLThroughMap();
 
 // Call back and higher orders
 
@@ -448,9 +327,70 @@ const studentsCalculated = [
 // Percentage = semester1 (85%), semester2 (73%), semester3 (65%) ==>
 // finalPercentage = sumOfEachSemesterPercentage / numberOfSemesters ==> (85 + 73 + 65) / 3
 
-
 // let array = [1,2,3,4,5]
 
 // for(let i = 0; i < array.length; i++){
 //   console.log(array[i])
 // }
+
+const postClose = document.getElementById("close");
+const postCont = document.getElementById("post");
+const createPost = document.getElementById("createPost");
+const createPostForm = document.getElementById("create-post-form");
+
+createPost.addEventListener("click", () => {
+  postCont.style.display = "flex";
+});
+
+createPostForm.addEventListener("click", (e) => {
+  e.stopPropagation();
+});
+
+createPostForm.addEventListener("submit", (e) => handleCreatePost(e));
+
+postClose.addEventListener("click", () => {
+  postCont.style.display = "none";
+});
+
+postCont.addEventListener("click", () => {
+  postCont.style.display = "none";
+});
+
+const setUserInPostDialoge = () => {
+  const usernameP = document.getElementById("loggedin-username");
+
+  const user = JSON.parse(localStorage.getItem("userData"));
+
+  usernameP.innerText = `${user.firstName} ${user.lastName}`;
+};
+
+setUserInPostDialoge();
+
+const handleCreatePost = (e) => {
+  e.preventDefault();
+
+  const caption = document.getElementById("caption");
+  const imageUrl = document.getElementById("image-url");
+  const user = JSON.parse(localStorage.getItem("userData"));
+
+  const posts = JSON.parse(localStorage.getItem("posts")) || [];
+
+  const newPost = {
+    profilePic: "https://i.pravatar.cc/150?img=1",
+    name: `${user.firstName} ${user.lastName}`,
+    date: "29 Jan, 2026 9:06 ",
+    caption: caption.value,
+    imageUrl: imageUrl.value,
+    reactions: 0,
+    comments: 0,
+    shares: 0,
+  };
+
+  posts.unshift(newPost);
+
+  localStorage.setItem("posts", JSON.stringify(posts));
+
+  createPostHTMLThroughMap();
+
+  postCont.style.display = "none";
+};
