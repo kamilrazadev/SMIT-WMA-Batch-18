@@ -13,6 +13,7 @@ const sweety = (error, title, message) => {
 const loginHandler = () => {
   let emailValue = email.value;
   let passwordValue = password.value;
+  console.log(passwordValue)
   if (emailValue.trim() === "" || passwordValue.trim() === "") {
     return sweety("error", "Something went wrong", "Please Enter all fields!");
   }
@@ -25,8 +26,12 @@ const loginHandler = () => {
     let user = usersFromDB[i];
 
     if (user?.email === emailValue) {
+      
       isAccountExists = true;
+      // console.log(user?.email, "email user ==>", emailValue)
+      // console.log(user?.password, "user password ==>", passwordValue)
       if (user?.password == passwordValue) {
+        console.log(user?.password == passwordValue, "kia password sahi hai?")
         localStorage.setItem("userData", JSON.stringify(user));
         alert("Login Successfully");
         window.location.href = "/dashboard";
