@@ -1,7 +1,7 @@
 let postContainer = document.querySelector("#post-container");
-let searchInput = document.getElementById("searchInput")
-let searchBtn = document.getElementById("searchBtn")
-let postData = JSON.parse(localStorage.getItem("posts"))
+let searchInput = document.getElementById("searchInput");
+let searchBtn = document.getElementById("searchBtn");
+let postData = JSON.parse(localStorage.getItem("posts"));
 
 console.log(postData);
 
@@ -175,9 +175,6 @@ const postHTML = (post) => {
                         </div>`;
 };
 
-
-
-
 // one liner  ==>
 
 // const createPostHTMLThroughMap = () => {
@@ -205,16 +202,16 @@ const postHTML = (post) => {
 
 // without postHTML function ==>
 const createPostHTMLThroughMap = (filterPosts) => {
-  console.log(filterPosts)
-if(filterPosts){
-let htmlPost = filterPosts.map((post) => postHTML(post))
+  console.log(filterPosts);
+  if (filterPosts) {
+    let htmlPost = filterPosts.map((post) => postHTML(post));
 
-  postContainer.innerHTML = htmlPost.join("")
-  console.log(htmlPost, "POSTS -->")
-}else{
+    postContainer.innerHTML = htmlPost.join("");
+    console.log(htmlPost, "POSTS -->");
+  } else {
     const postsFromLS = JSON.parse(localStorage.getItem("posts"));
-  let postHTMLForContainer = postsFromLS?.map((post) => {
-    return `<div class="post">
+    let postHTMLForContainer = postsFromLS?.map((post) => {
+      return `<div class="post">
                             <div class="post-header">
                                 <div class="profile-content">
                                     <div class="profile-pic">
@@ -259,12 +256,11 @@ let htmlPost = filterPosts.map((post) => postHTML(post))
                                 </div>
                             </div>
                         </div>`;
-  });
-  postContainer.innerHTML = postHTMLForContainer
-    ? postHTMLForContainer.join("")
-    : "";
-}
-
+    });
+    postContainer.innerHTML = postHTMLForContainer
+      ? postHTMLForContainer.join("")
+      : "";
+  }
 };
 
 createPostHTMLThroughMap();
@@ -410,21 +406,27 @@ const handleCreatePost = (e) => {
   postCont.style.display = "none";
 };
 
-
-
 const serachHandler = () => {
-  
-  let value = searchInput.value
+  try {
+    let value = undefined.toLowerCase();
+    // true
+    // let filterPosts = postData.filter((post) => post.caption.includes(value));
 
-  let filterPosts = postData.filter((post) => post.caption.includes(value) )
+    let filterPosts = postData.filter((post, index) => {
+      if (
+        post.caption?.toLowerCase().includes(value) ||
+        post.name?.toLowerCase().includes(value)
+      )
+        return true;
+    });
 
-  // console.log(filterPosts)
-  createPostHTMLThroughMap(filterPosts);
-
-}
-
-
+    console.log("filterPosts: ", filterPosts);
+    createPostHTMLThroughMap(filterPosts);
+  } catch (e) {
+    console.log(e);
+  }
+};
 
 searchBtn.addEventListener("click", () => {
-  serachHandler()
-})
+  serachHandler();
+});
