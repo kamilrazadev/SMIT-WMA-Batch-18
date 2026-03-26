@@ -454,3 +454,9 @@ const studentsCalculated = [
 // for(let i = 0; i < array.length; i++){
 //   console.log(array[i])
 // }
+
+// let postsName = posts.map(function (post) {
+// return "Subhan"
+// })
+
+// console.log(postsName)
