@@ -1,0 +1,16 @@
+.prod-card {
+  border: 1px solid black;
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.prod-card > img {
+    width: 100%;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
